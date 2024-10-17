@@ -1,0 +1,36 @@
+{
+  "name": "unit-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "keywords": [],
+  "author": "mohammad.anang",
+  "license": "ISC",
+  "type": "module",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "devDependencies": {
+    "chai": "^5.1.1",
+    "mocha": "^10.7.3",
+    "sinon": "^19.0.2"
+  },
+  "mocha": {
+    "spec": "tests/**/*.test.js",
+    "extension": [
+      "js"
+    ],
+    "inline-diffs ": true,
+    "full-trace": true,
+    "recursive": true,
+    "diff": true,
+    "exit": true,
+    "slow": 300
+  }
+}
